@@ -1,0 +1,134 @@
+i {
+  cursor: pointer;
+}
+
+.form-control.ng-touched.ng-invalid {
+    border:1px solid red;
+   }
+   .form-control.ng-touched.ng-valid {
+    border:1px solid green;
+   }
+   .items{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    align-items: center;
+    border-left: 50px;
+    border-right:50px ;
+  }
+  .input {
+    width: 30%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   .ttt{
+    width: 100%;
+   }
+   .dd{
+    position: relative;
+    z-index: 100;
+    float: right;
+    
+   }
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .icon {
+    margin-top: 10px;
+    position: absolute;
+    left: 1rem;
+    fill: #009ef7;
+    width: 2rem;
+    height: 2rem;
+   }
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+}
+
+button:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+}
+.items1{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #000066;
+}
+.items2{
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  
+}
+.add-button {
+    background: #00A1ED;
+    border: #00A1ED;
+    height: 50px;
+    width: 120px;
+    margin: left 10px;
+    margin-right: 10px;
+    border-radius: 5px; 
+}
+.save-button {
+  background: #00A1ED;
+  border: #00A1ED;
+  margin: left 10px; ;
+  margin-right: 10px;
+}
+.cancel-button{
+    background: #ff0000;
+    border: #ff0000;
+    margin: left 10px; ;
+    margin-right: 10px;
+    
+}
+.cancel-buttont{
+  background: #ff0000;
+  
+  
+  
+}
+  .items2{
+    float: right;
+  }
+
+  .items3{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .d{
+    margin-left: 100%;
+  }
+  

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Error404Component } from './error404/error404.component';
+import { detailcomponent } from './error404/error404.component';
 import { Error500Component } from './error500/error500.component';
 import { ErrorsComponent } from './errors.component';
 
@@ -10,8 +10,8 @@ const routes: Routes = [
     component: ErrorsComponent,
     children: [
       {
-        path: '404',
-        component: Error404Component,
+        path: 'followdetail',
+        component:detailcomponent,
       },
       {
         path: '500',

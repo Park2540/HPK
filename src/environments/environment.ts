@@ -9,7 +9,7 @@ export const environment = {
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: true,
   
-  apiUrl: 'https://92f70f52-346b-449d-b353-21e6f7f149c2.mock.pstmn.io',
+  apiUrl: 'http://10.221.43.223:8000',
 
   appThemeName: 'Metronic',
   appPurchaseUrl: 'https://1.envato.market/EA4JP',

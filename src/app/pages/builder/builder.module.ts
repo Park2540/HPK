@@ -5,6 +5,7 @@ import { BuilderComponent } from './builder.component';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { InlineSVGModule } from 'ng-inline-svg-2';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 import {ApiInsertService} from 'src/app/servics/insertdata/insert.service'
 
 @NgModule({
@@ -18,6 +19,8 @@ import {ApiInsertService} from 'src/app/servics/insertdata/insert.service'
     ReactiveFormsModule,
     InlineSVGModule,
     NgbTooltipModule,
+    MatDatepickerModule,
+    
     RouterModule.forChild([
       {
         path: '',

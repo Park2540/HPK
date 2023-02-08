@@ -3,20 +3,34 @@ import { RouterModule, Routes } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
 import { AccountComponent } from './account.component';
 import { SettingsComponent } from './settings/settings.component';
-
+import { DetailReportComponent } from '../../pages/detail/detail.component'
+import{detailcomponent} from '../errors/error404/error404.component'
 const routes: Routes = [
   {
-    path: '',
-    component: AccountComponent,
+    path: 'account',
+    // component: AccountComponent,
     children: [
       {
-        path: 'overview',
-        component: OverviewComponent,
+        path: '',
+        component: AccountComponent,
       },
+      // {
+      //   path: 'overview',
+      //   component: OverviewComponent,
+      // },
+      // {
+      //   path: 'settings',
+      //   component: SettingsComponent,
+      // },
       {
-        path: 'settings',
-        component: SettingsComponent,
+        path: ':id',
+        component: DetailReportComponent
       },
+      // {
+      //   path: 'followdetail/:id',
+      //   component:detailcomponent
+      // },
+
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: '**', redirectTo: 'overview', pathMatch: 'full' },
     ],

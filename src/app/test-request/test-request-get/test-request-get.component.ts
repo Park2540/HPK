@@ -13,7 +13,7 @@ export class TestRequestGetComponent implements OnInit {
   constructor(private settingservics: SettingService) { }
 
   ngOnInit(): void {
-    this.settingservics.getuser(6265).subscribe((response: any)=>{
+    this.settingservics.getUserLis(6265).subscribe((response: any)=>{
       console.log('response',response);
     })
 

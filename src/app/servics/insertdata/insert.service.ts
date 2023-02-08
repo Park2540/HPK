@@ -13,21 +13,40 @@ export class ApiInsertService {
 
 
   getcr():Observable<any> {
-    return this.http.get('/api/problemrecord')
+    return this.http.get('/problemrecord')
   }
+  
+  getListSystem() {
+    return this.http.get(`${environment.apiUrl}/systems`)
+  }
+  getListUser() {
+    return this.http.get(`${environment.apiUrl}/users`)
+  }
+  getListProblem() {
+    return this.http.get(`${environment.apiUrl}/problems`)
+  }
+  getListLevels() {
+    return this.http.get(`${environment.apiUrl}/levels`)
+  }
+  getListAgencys() {
+    return this.http.get(`${environment.apiUrl}/agencys`)
+  }
+  getListContacts() {
+    return this.http.get(`${environment.apiUrl}/contacts`)
+  }
+  
 
   createNewInsertproblem(form:any,file:File):Observable<any>{
     var data = new FormData();
     data.append('agency',form.agency);
     data.append('contact',form.contact);
     data.append('informer',form.informer);
-    data.append('informer_message',form.informer_message);
+    data.append('informermessage',form.informermessage);
     data.append('system',form.system);
-    data.append('problem_type',form.problem_type);
+    data.append('timebyuser',form.timebyuser);
     data.append('level',form.level);
-    data.append('problem',form.problem);
-    data.append('file',file);
-    return this.http.post(environment.apiUrl+'/api/problemrecord',data)
+    data.append('problem_records',file);
+    return this.http.post(environment.apiUrl+'/problemrecord',data)
   }
   update() {
     return
