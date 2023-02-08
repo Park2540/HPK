@@ -1,0 +1,90 @@
+<div class="container items">
+  <div>
+    <h2 class=" pt-3 form-control:#000066">นำเข้ารายการปัญหา</h2>
+  </div>
+  <br>
+  <div class="row justify-content-sm-center pt-5 ">
+    <div class=" shadow round pb-3">
+      <form  class="theme-form" [formGroup]="insertproblemDataform" (ngSubmit)="onSubmit()" >
+        <div >
+          <label class="col-form-label" for="agency" >หน่วงงาน</label>
+          <select formControlName="agency" [(ngModel)]="insertproblem.agency" type="text" name="agency"  class="form-control" id="">
+            <option value="TCC">TCC</option>
+            <option value="UP">UP</option>
+            <option value="TU">TU</option>
+        </select>
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" for="contact">ช่องทางการติดต่อ</label>
+          <select formControlName="contact" [(ngModel)]="insertproblem.contact" type="text" name="contact"  class="form-control" id="">
+            <option value="line">ไลน์</option>
+            <option value="messenger">messenger</option>
+            <option value="phone">โทรศัพท์</option>
+            <option value="personal">ส่วนตัว</option>
+            <option value="other">อื่น ๆ</option>
+        </select>
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label">ชื่อผู้แจ้ง </label>
+          <input  formControlName="informer" [(ngModel)]="insertproblem.informer" type="text" name="informer"  class="form-control">
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" for="informer_message">ข้อความการแจ้ง</label>
+          <textarea formControlName="informer_message" [(ngModel)]="insertproblem.informer_message" class="form-control" type="text" name="informer_message" id="" cols="50" rows="5"></textarea><!--readonly เป็นการกำหนดค่าไม่ให้มีการเปลี่ยนแปลงได้-->
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" for="system">ระบบ</label>
+          <select formControlName="system" [(ngModel)]="insertproblem.system" type="text" name="system"  class="form-control" id="">
+            <option value="Bangphim">Bangphim</option>
+            <option value="Postedit">Postedit</option>
+            <option value="Revoice">Revoice</option>
+            <option value="CRM">CRM</option>
+            <option value="Broadcaster">Broadcaster</option>
+            <option value="Tool">Tool</option>
+        </select>
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" for="problem_type">รูปแบบปัญหา</label>
+          <select formControlName="problem_type" [(ngModel)]="insertproblem.problem_type" type="text" name="problem_type"  class="form-control" id="">
+            <option value="usererror">usererror</option>
+            <option value="network">network</option>
+            <option value="request-feature">request-feature</option>
+            <option value="bug">bug</option>
+            <option value="unspecified">unspecified</option>
+        </select>
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" for="level">ความรุนแรง</label>
+          <select formControlName="level" [(ngModel)]="insertproblem.level" type="text" name="level"  class="form-control" id="">
+            <option value="low">ต่ำ</option>
+            <option value="moderate">ปานกลาง</option>
+            <option value="high">สูง</option>
+        </select>
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" for="problem">ปัญหาที่พบ</label>
+          <textarea formControlName="problem" [(ngModel)]="insertproblem.problem" type="text" name="problem"  class="form-control" id="" cols="50" rows="5"></textarea><!--readonly เป็นการกำหนดค่าไม่ให้มีการเปลี่ยนแปลงได้-->
+        </div>
+        <br>
+        <div >
+          <label class="col-form-label" >แนบไฟล์</label>
+          <input (change)="fileupload($event)" class="form-control" type="file" >
+      </div>
+      <br>
+      <div class="items2">
+        <button class="cancel-button" type="reset" value="reset">ยกเลิก</button>
+        <button class="save-button" type="submit" name="btinsert" [disabled]="!insertproblemDataform.valid">ยืนยัน</button>
+      </div>
+        
+      </form>
+    </div>
+    
+  </div>
+</div>
