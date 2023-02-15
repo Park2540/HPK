@@ -9,7 +9,7 @@ export const environment = {
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: true,
   
-  apiUrl: 'http://10.221.43.223:8000',
+  apiUrl: 'http://192.168.151.7:8000',
 
   appThemeName: 'Metronic',
   appPurchaseUrl: 'https://1.envato.market/EA4JP',

@@ -27,10 +27,10 @@
       <ng-container matColumnDef="systems">
         <th class="taxt" mat-header-cell *matHeaderCellDef> ระบบ </th>
         <td mat-cell *matCellDef="let PeriodicElement"> 
-          <div *ngFor="let system of PeriodicElement.systems;let i = index ">
+          <span *ngFor="let system of PeriodicElement.systems;let i = index ">
             {{system.name}} 
-            <div *ngIf="i != PeriodicElement.systems.length - 1 ">,</div>
-          </div>
+            <span *ngIf="i != PeriodicElement.systems.length - 1 ">,</span>
+          </span>
          
         </td>
       

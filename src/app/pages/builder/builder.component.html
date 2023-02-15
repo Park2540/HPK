@@ -9,7 +9,7 @@
         <br>
         <div >
           <label class="col-12 md:col-4 ptax" for="agency" >หน่วยงาน</label>
-          <select formControlName="agency" [(ngModel)]="insertproblem.agency" type="text" name="agency"  class="form-control" id="agency_id " multiple>
+          <select formControlName="agency" [(ngModel)]="insertproblem.agency" type="text" name="agency"  class="form-control" id="agency_id " >
             <option  *ngFor="let agency of agency" [value]="agency.id">{{agency.name}}</option>
 
         </select>
@@ -17,7 +17,7 @@
         <br>
         <div >
           <label class="col-form-label  ptax" for="contact">ช่องทางการติดต่อ</label>
-          <select formControlName="contact" [(ngModel)]="insertproblem.contact" type="text" name="contact"  class="form-control" id="contact_id" multiple>
+          <select formControlName="contact" [(ngModel)]="insertproblem.contact" type="text" name="contact"  class="form-control" id="contact_id" >
             <option *ngFor="let contact of contact" [value]="contact.id">{{contact.name}}</option>
             
         </select>

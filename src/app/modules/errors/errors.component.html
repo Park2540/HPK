@@ -43,7 +43,7 @@
 <br>
 <table class="ttt">
   <tr>
-    <th></th>
+    <th style="width: 15%;"></th>
     <th></th>
   </tr>
   <span style="margin-left: 30px;">
@@ -86,10 +86,8 @@
     </tr>
     <tr>
       <td>ระบบ :</td>
-      <span *ngFor="let systems of detail.systems;let i = index ">
-  
-        <td>{{systems.name}}</td>
-  
+      <span *ngFor="let system of detail.systems;let i = index ">
+        {{system.name}} 
         <span *ngIf="i != detail.systems.length - 1 ">,</span>
       </span>
     </tr>
